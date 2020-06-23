@@ -1,6 +1,10 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -12,7 +16,7 @@
   color: #363636;
 }
 .top-header-box {
-  margin: 50px 173px;
+  margin: 10px 173px;
 }
 .video {
   max-width: 360px;
@@ -52,4 +56,92 @@
   padding-top: 30px;
   padding-bottom: 30px;
   cursor: pointer;
+}
+.main {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  min-height: 1065px;
+  text-align: center;
+  margin-top: 0;
+  color: #ffffff;
+}
+.main-title {
+  margin-top: 270px;
+  font-size: 100px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.main-text {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.main-subtitle {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 85px;
+}
+.main-watch {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.main-btn {
+  color: #ffffff;
+  background-color: #059feb;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-scroll {
+  margin-top: 150px;
+}
+.main-mouse {
+  color: #ffffff;
+  width: 38px;
+}
+.task {
+  text-align: center;
+  color: #363636;
+}
+.task-title {
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: 900;
+}
+.task-line {
+  height: 5px;
+  width: 177px;
+  background-color: #059feb;
+}
+.task-text {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+.task-box {
+  display: flex;
+  justify-content: space-around;
+}
+.task-box-item {
+  margin: 0 40px;
+  max-width: 400px;
+}
+.task-box-item-img {
+  max-height: 130px;
+}
+.task-box-item-title {
+  font-size: 30px;
+}
+.task-box-item-text {
+  font-size: 18px;
 }
