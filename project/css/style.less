@@ -48,6 +48,22 @@ body {
     border-radius: 15px;
     text-decoration: none;
     color: @black-text;
+    &:hover {
+      animation-name: btn-color;
+      animation-duration: 1s;
+      color: @white;
+      background-color: @black-text;
+    }
+  }
+}
+@keyframes btn-color {
+  from {
+    color: @black-text;
+    background-color: @white;
+  }
+  to {
+    color: @white;
+    background-color: @black-text;
   }
 }
 .bottom-header {
@@ -64,7 +80,21 @@ body {
       padding-top: 30px;
       padding-bottom: 30px;
       cursor: pointer;
+      transition: 5s;
+      &:hover {
+        animation-name: text-shadow;
+        animation-duration: 1s;
+        text-shadow: 0 0 15px #ffffff;
+      }
     }
+  }
+}
+@keyframes text-shadow {
+  from {
+    text-shadow: 0 0 0 #ffffff;
+  }
+  to {
+    text-shadow: 0 0 5px #ffffff;
   }
 }
 .main {
